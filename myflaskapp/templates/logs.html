@@ -1,0 +1,17 @@
+<!-- templates/logs.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>로그 데이터</title>
+</head>
+<body>
+<h1>로그 데이터</h1>
+<ul>
+    {% for log in logs %}
+        <li>{{ log.message }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
+
