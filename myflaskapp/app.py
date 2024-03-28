@@ -35,7 +35,7 @@ def home():
     start_time = datetime.now() - timedelta(days=1)
     end_time = datetime.now()
     logs = get_logs_from_multiple_groups(log_groups, start_time, end_time)
-    return render_template('logs.html', logs=logs)
+    return render_template('/black-dashboard-master/examples/dashboard.html', logs=logs)
 
 if __name__ == '__main__':
     app.run(debug=True)
